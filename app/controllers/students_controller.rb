@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  
+
   def index
     @students = Student.all
   end
@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new
     @student.first_name = params[:first_name]
-    
+
   end
 
 end
